@@ -50,6 +50,14 @@ git remote push -u orgin master
 ```
 git remote add some-short-name https://gitlab.com/some-other-project.git
 ```
+### Git remote - remove url
+```
+git remote rm origin
+```
+### Git remote - Remove commit and reset head
+```
+git push origin +HEAD^:<remote-branch-name>
+```
 ### Git branch - add new branch, check it out and push new branch to origin
 ```
 git branch blah
