@@ -76,3 +76,33 @@ git reflog
 #To see complete commits
 git log
 ```
+## Git Branching
+### Git rename branch 
+```
+git branch -m new-name
+```
+### Git rename branch in remote
+```
+git push origin :old-name new-name
+```
+### Git delete local branch
+```
+git branch -d branch-name
+```
+### Git delete remote branch
+```
+git push origin --delete branch-name
+```
+
+## Git Undoing
+### Git add file/ change commit message to previous commit 
+```
+git add file-name
+git commit --amend
+```
+### Git add file/ change commit message of some other old commit 
+```
+git add file-name
+git commit --squash old-commit-id
+git rebase --autosquash -i old-commit-id
+```
