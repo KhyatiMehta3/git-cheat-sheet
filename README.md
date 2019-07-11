@@ -106,3 +106,14 @@ git add file-name
 git commit --squash old-commit-id
 git rebase --autosquash -i old-commit-id
 ```
+### Git forget tracking a file
+```
+#Add file's name to .gitignore
+git update-index --assume-unchanged <file_name>
+```
+### Git re-track file
+```
+#Remove file from .gitignore
+git update-index --no-assume-unchanged <file_name>
+git add <file_name>
+```
