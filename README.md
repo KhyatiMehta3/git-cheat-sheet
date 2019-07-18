@@ -117,3 +117,7 @@ git update-index --assume-unchanged <file_name>
 git update-index --no-assume-unchanged <file_name>
 git add <file_name>
 ```
+### Git add specific commit from a different branch
+```
+git cherry-pick <commit-hash>
+```
